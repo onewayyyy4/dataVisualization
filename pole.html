@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pole</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+</head>
+<body>
+	<div class="container text-center" style="height: 350px; background-color: green; display: none;">
+		<h1> элемент 14-й группы периодической системы химических элементов (по устаревшей классификации — элемент главной подгруппы IV группы), пятого периода, с атомным номером 50[5]. Относится к группе лёгких металлов. При нормальных условиях простое вещество  — пластичный, ковкий и легкоплавкий блестящий металл серебристо-белого цвета.</h1>
+	</div>
+		<div class="otv" style="display: none;">
+			<div class="border  otv1" style=" background:black; height: 100px;width: 100px;position: absolute; margin-left: 500px; text-align: center;" >
+				<h1 class="mt-3 " style="color: black;">О</h1>
+			</div>
+			<div class="border  otv2" style="background:black; height: 100px;width: 100px;position: absolute; margin-left: 600px;text-align: center;">
+				<h1 class="mt-3 " style="color: black;" >Л</h1>
+			</div>
+			<div class="border  otv3" style="background:black; height: 100px;width: 100px;position: absolute; margin-left: 700px;text-align: center;">
+				<H1 class="mt-3 " style="color: black;">О</H1>
+			</div>
+			<div class="border otv4" style="background:black;height: 100px;width: 100px;position: absolute; margin-left: 800px;text-align: center;">
+				<h1 class="mt-3 "style="color: black;" >В</h1>
+			</div>
+			<div class="border  otv5" style="background:black;height: 100px;width: 100px;position: absolute; margin-left: 900px;text-align: center;">
+				<h1 class="mt-3 "style="color: black;" >O</h1>
+			</div>
+		</div>
+		<div class="bukv" style="display: none;">
+			<div class="A" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>А</h1></div>
+			<div class="B" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Б</h1></div>
+			<div class="V" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>В</h1></div>
+			<div class="G" style="position: absolute;margin-top: 130PX;margin-left: 750px"><h1>Г</h1></div>
+			<div class="D" style="position: absolute;margin-top: 130PX;margin-left: 850px"><h1>Д</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Е</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Ё</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Ж</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>З</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>И</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Й</h1></div>
+			<div class="l" style="position: absolute;margin-top: 130PX;margin-left: 700px"><h1>Л</h1></div>
+			
+			<div class="Z" style="position: absolute;margin-top: 130PX;margin-left: 800px"><h1>В</h1></div>
+			
+		    <div class="N" style="position: absolute;margin-top: 130PX;margin-left: 500px"><h1>Н</h1></div>
+		    <div class="S" style="position: absolute;margin-top: 130PX;margin-left: 550px"><h1>С</h1></div>
+			<div class="f" style="position: absolute;margin-top: 130PX;margin-left: 600px"><h1>Р</h1></div>
+			<div class="H" style="position: absolute;margin-top: 130PX;margin-left: 650px"><h1>Щ</h1></div>
+			
+			<div class="o" style="position: absolute;margin-top: 130PX;margin-left: 900px"><h1>О</h1></div>
+			
+		</div>
+		<div class="welcome" style="position: absolute; padding-top: 180px;display: none;">
+			<h5>"В эфире капитал шоу поле-чудес" угадайте слово</h5>
+			<img src="start.png" class="w-50">
+		</div>
+		<div class="polehud " style="position: absolute; margin-left: 500px;">
+			<img src="pole.png" class="w-50">
+		</div>
+		<script type="text/javascript">
+			let go=function(){
+				document.querySelector(".container").style.display="block";
+				document.querySelector(".otv").style.display="block";
+				document.querySelector(".bukv").style.display="block";
+				document.querySelector(".welcome").style.display="block";
+				document.querySelector(".polehud").style.display="none";
+			}
+			setTimeout(go,1000);
+			document.querySelector(".N").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".S").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".f").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".H").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".l").onclick=function(){
+				alert("угодал");
+				document.querySelector(".otv2").style.background="blue"
+
+			}
+			document.querySelector(".G").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".Z").onclick=function(){
+				alert("веерноо");
+				document.querySelector(".otv4").style.background="blue"
+			}
+			document.querySelector(".D").onclick=function(){
+				alert("нет такой")
+			}
+			document.querySelector(".o").onclick=function(){
+				alert("откройте буквы");
+				document.querySelector(".otv1").style.background="blue";
+				document.querySelector(".otv3").style.background="blue";
+				document.querySelector(".otv5").style.background="blue";
+
+
+
+
+			}
+		</script>
+
+
+	
+</body>
+</html>
